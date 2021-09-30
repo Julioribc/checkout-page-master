@@ -15,65 +15,83 @@
   </head>
 
 
-  <body>
+  <body class="container">
       <!-- Section Title -->
-      <header>
-          <h1>Checkout</h1>
+      <header class="header">
+          <h1 class="title">Checkout</h1>
       </header>
 
 
-      <!-- Section  shopping cart -->
-      <section>
-        <div>
-            <figure>
-                <img src="img/photo1.png" alt="bag" width="200px">
+      <!-- Section  shopping car -->
+      <section class="shopping-car">
+        <div class="card">
+            <figure class="card-image">
+                <img class="card-img" src="img/photo1.png" alt="bag" width="200px">
             </figure>
-            <div>
-                <h3>Vintage Backbag</h3>
-                <div>
-                    <span>$54.99</span><span>$94.99</span>
+            <div class="card-details-product">
+                <h3 class="card-name-product">Vintage Backbag</h3>
+                <div class="card-price-product">
+                    <div class="product-price-offer">$54.99</div>
+                    <div class="product-price-regular">$94.99</div>
                 </div>
-                <div>
-                    <span>-</span><span>1</span><span>+</span>
+                <div class="card-product-amount">
+                    <button class="product-amount">-</button>
+                    <input class="product-total" type="number" name="" id="" placeholder="1">
+                    <button class="product-amount">+</button>
                 </div>
             </div>
         </div>
-        <div>
-            <figure>
-                <img src="img/photo2.png" alt="bag" width="200px">
+        <div class="card">
+            <figure class="card-image">
+                <img class="card-img" src="img/photo2.png" alt="bag" width="200px">
             </figure>
-            <div>
-                <h3>Levi Shoes</h3>
-                <div>
-                    <span>$74.99</span><span>$124.99</span>
+            <div class="card-details-product">
+                <h3 class="card-name-product">Levi Shoes</h3>
+                <div class="card-price-product">
+                    <div class="product-price-offer">$74.99</div>
+                    <div class="product-price-regular">$124.99</div>
                 </div>
-                <div>
-                    <span>-</span><span>1</span><span>+</span>
+                <div class="card-product-amount">
+                    <button class="product-amount">-</button>
+                    <input class="product-total" type="number" name="" id="" placeholder="1">
+                    <button class="product-amount">+</button>
                 </div>
             </div>
         </div>
-        <div>
-            <div>
-                <h3>Shipping</h3>
-                <h4>$19</h4>
+        <div class="card-price-total">
+            <div class="card-details-send">
+                <h3 class="details-send">Shipping</h3>
+                <h4 class="details-total">$19</h4>
             </div>
-            <div>
-                <h3>Total</h3>
-                <h4>$148.98</h4>
+            <div class="card-details-send">
+                <h3 class="details-send">Total</h3>
+                <h4 class="details-total">$148.98</h4>
             </div>
         </div>
       </section>
 
 
-      <section>
-          <form action="">
-              <h2>Contact Information</h2>
-                <label for="mail">E-mail <input type="email" placeholder=" Enter your email..." id="mail" ></label>
-                <label for="phone">Phone <input type="tel" placeholder="Enter your phone..." id="phone"></label>
-                <h2>Shipping address</h2>
+      <section class="contact-information">
+          <form action="" class="information">
+              <h2 class="information-title">Contact Information</h2>
+                <label class="information-data-contact" for="mail">E-mail<input class="data-contact-input" type="email" placeholder=" Enter your email..." id="mail" ></label>
+                <label class="information-data-contact" for="phone">Phone<input class="data-contact-input"type="tel" placeholder="Enter your phone..." id="phone"></label>
+              <h2 class="information-subtitle">Shipping address</h2>
+                <label class="information-data-contact" for="name">Full name<input class="data-contact-input" type="text" placeholder="Rodney Cotton" id="text"></label>
+                <label class="information-data-contact" for="address">Address<input class="data-contact-input" type="text" id="address" placeholder="Your address.."></label>
+                <label class="information-data-contact" for="city">City<input class="data-contact-input" type="text" id="city" placeholder="Your city.."></label>
+                <div class="information-data-contact-doble">
+                    <label class="information-data-contact" for="country">Country<input class="data-contact-input" type="text" id="country" placeholder="Your country...."></label>
+                    <label class="information-data-contact" for="postal-code">Postal code<input class="data-contact-input" type="number" id="postal-code" placeholder="Your postal code.."></label>
+                </div>
+                <label class="information-checkbox" for="checkbox"><input class="information-checkbox-text" type="checkbox" id="checkbox">Save this information for next time</label>
+                <button class="information-submit-data" type="submit">Continue</button>
           </form>
       </section>
 
-
+      <!-- Footer -->
+      <footer class="footer">
+          <h3 class="footer-autor">created by Julio Bolivar - devChallenges.io</h3>
+      </footer>
   </body>
 </html>

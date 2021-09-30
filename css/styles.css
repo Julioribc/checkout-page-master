@@ -25,7 +25,15 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-::placeholder {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
+.container {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-area: "header"
+               "shopping-car"
+               "contact-information"
+               "footer";
 }
