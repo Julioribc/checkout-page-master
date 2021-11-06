@@ -23,7 +23,7 @@
 
 
       <!-- Section  shopping car -->
-      <section class="shopping-car">
+      <section class="item-card">
         <div class="card">
             <figure class="card-image">
                 <img class="card-img" src="img/photo1.png" alt="bag">
@@ -35,9 +35,9 @@
                     <div class="product-price-regular">$94.99</div>
                 </div>
                 <div class="card-product-amount">
-                    <button class="product-amount">-</button>
+                    <button class="product-counter product-decrement">-</button>
                     <input class="product-total" type="number" name="" id="" placeholder="1">
-                    <button class="product-amount">+</button>
+                    <button class="product-counter product-increase">+</button>
                 </div>
             </div>
         </div>
@@ -52,9 +52,9 @@
                     <div class="product-price-regular">$124.99</div>
                 </div>
                 <div class="card-product-amount">
-                    <button class="product-amount">-</button>
+                    <button class="product-counter product-decrement">-</button>
                     <input class="product-total" type="number" name="" id="" placeholder="1">
-                    <button class="product-amount">+</button>
+                    <button class="product-counter product-increase">+</button>
                 </div>
             </div>
         </div>
@@ -72,19 +72,43 @@
 
 
       <section class="contact-information">
-          <form action="" class="information">
+          <form action="" class="form-information">
               <h2 class="information-title">Contact Information</h2>
-                <label class="information-data-contact" for="mail">E-mail<input class="data-contact-input" type="email" placeholder=" Enter your email..." id="mail" ></label>
-                <label class="information-data-contact" for="phone">Phone<input class="data-contact-input"type="tel" placeholder="Enter your phone..." id="phone"></label>
+              <div class="information-user">
+                <label class="information-data-contact" for="mail">E-mail></label>
+                <input class="data-contact-input" type="email" placeholder="Enter your email..." id="mail">
+              </div>
+              <div class="information-user">
+                  <label class="information-data-contact" for="phone">Phone</label>
+                  <input class="data-contact-input"type="tel" placeholder="Enter your phone..." id="phone">
+              </div>
               <h2 class="information-subtitle">Shipping address</h2>
-                <label class="information-data-contact" for="name">Full name<input class="data-contact-input" type="text" placeholder="Rodney Cotton" id="text"></label>
-                <label class="information-data-contact" for="address">Address<input class="data-contact-input" type="text" id="address" placeholder="Your address.."></label>
-                <label class="information-data-contact" for="city">City<input class="data-contact-input" type="text" id="city" placeholder="Your city.."></label>
-                <div class="information-data-contact-doble">
-                    <label class="information-data-contact" for="country">Country<input class="data-contact-input" type="text" id="country" placeholder="Your country...."></label>
-                    <label class="information-data-contact" for="postal-code">Postal code<input class="data-contact-input" type="number" id="postal-code" placeholder="Your postal code.."></label>
+              <div class="information-user">
+                  <label class="information-data-contact" for="name">Full name</label>
+                  <input class="data-contact-input" type="text" placeholder="Rodney Cotton" id="text">
+              </div>
+              <div class="information-user">
+                  <label class="information-data-contact" for="address">Address</label>
+                  <input class="data-contact-input" type="text" id="address" placeholder="Your address..">
+              </div>
+              <div class="information-user">
+                  <label class="information-data-contact" for="city">City</label>
+                  <input class="data-contact-input" type="text" id="city" placeholder="Your city..">
+              </div>
+              <div class="flex">
+                  <div class="information-user w-50">
+                      <label class="information-data-contact" for="country">Country</label>
+                      <input class="data-contact-input" type="text" id="country" placeholder="Your country....">
+                  </div>
+                  <div class="information-user w-50">
+                      <label class="information-data-contact" for="postal-code">Postal code</label>
+                      <input class="data-contact-input" type="number" id="postal-code" placeholder="Your postal code..">
+                  </div>
+              </div>
+              <div>
+                  <input class="information-checkbox-text" type="checkbox" id="checkbox">
+                  <label class="information-checkbox" for="checkbox">Save this information for next time</label>
                 </div>
-                <label class="information-checkbox" for="checkbox"><input class="information-checkbox-text" type="checkbox" id="checkbox">Save this information for next time</label>
                 <button class="information-submit-data" type="submit">Continue</button>
           </form>
       </section>
