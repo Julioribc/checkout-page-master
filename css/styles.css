@@ -196,12 +196,13 @@ body {
     color: var(--gray-1);
 }
 
-.information-user {
-    margin-top: 1rem;
+.form-group {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     width: 100%;
 }
 
-.information-data-contact {
+.information-data-group {
     font-size: 1.0rem;
     font-family: Montserrat;
     font-style: normal;
@@ -210,7 +211,7 @@ body {
     color: var(--gray-2);
 }
 
-.data-contact-input {
+.form-input-group {
     margin-top: 0.6rem;
     margin-bottom: 0.6rem;
     width: 100%;
@@ -226,11 +227,43 @@ body {
 }
 
 
-.w-50 {
-    width: 47%;
-}
-
-.flex {
+.half-group {
     display: flex;
     justify-content: space-between;
 }
+
+.half-group div {
+    width: 47%;
+}
+
+.information-checkbox {
+    width: 1.6rem;
+    height: 1.5rem;
+    margin-right: 1rem;
+}
+
+.information-checkbox-text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    color: var(--gray-2);
+}
+
+.information-submit-data {
+    margin-top: 2rem;
+    padding: 1.5rem 3rem;
+    background-color: var(--orange);
+    border-radius: 1rem;
+    border: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: var(--white);
+    /* position: absolute;
+    right: 0; */
+}
+

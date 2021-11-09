@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <title>Devchallenges</title>
     <link rel="stylesheet" href="css/styles.css">
   </head>
@@ -74,40 +74,46 @@
       <section class="contact-information">
           <form action="" class="form-information">
               <h2 class="information-title">Contact Information</h2>
-              <div class="information-user">
-                <label class="information-data-contact" for="mail">E-mail></label>
-                <input class="data-contact-input" type="email" placeholder="Enter your email..." id="mail">
+              <div class="form-group">
+                <label class="information-data-group" for="mail">E-mail></label>
+                <i class="fa-solid fa-envelope"></i>
+                <input class="form-input-group" type="email" placeholder="Enter your email..." id="mail">
               </div>
-              <div class="information-user">
-                  <label class="information-data-contact" for="phone">Phone</label>
-                  <input class="data-contact-input"type="tel" placeholder="Enter your phone..." id="phone">
+              <div class="form-group">
+                  <label class="information-data-group" for="phone">Phone</label>
+                  <i class="fa-solid fa-phone"></i>
+                  <input class="form-input-group"type="tel" placeholder="Enter your phone..." id="phone">
               </div>
               <h2 class="information-subtitle">Shipping address</h2>
-              <div class="information-user">
-                  <label class="information-data-contact" for="name">Full name</label>
-                  <input class="data-contact-input" type="text" placeholder="Rodney Cotton" id="text">
+              <div class="form-group">
+                  <label class="information-data-group" for="name">Full name</label>
+                  <i class="fa-solid fa-circle-user"></i>
+                  <input class="form-input-group" type="text" placeholder="Rodney Cotton" id="text">
               </div>
-              <div class="information-user">
-                  <label class="information-data-contact" for="address">Address</label>
-                  <input class="data-contact-input" type="text" id="address" placeholder="Your address..">
+              <div class="form-group">
+                  <label class="information-data-group" for="address">Address</label>
+                  <i class="fa-solid fa-house"></i>
+                  <input class="form-input-group" type="text" id="address" placeholder="Your address..">
               </div>
-              <div class="information-user">
-                  <label class="information-data-contact" for="city">City</label>
-                  <input class="data-contact-input" type="text" id="city" placeholder="Your city..">
+              <div class="form-group">
+                  <label class="information-data-group" for="city">City</label>
+                  <i class="fa-solid fa-city"></i>
+                  <input class="form-input-group" type="text" id="city" placeholder="Your city..">
               </div>
-              <div class="flex">
-                  <div class="information-user w-50">
-                      <label class="information-data-contact" for="country">Country</label>
-                      <input class="data-contact-input" type="text" id="country" placeholder="Your country....">
+              <div class="half-group">
+                  <div class="form-group">
+                      <label class="information-data-group" for="country">Country</label>
+                      <i class="fa-solid fa-city"></i>
+                      <input class="form-input-group" type="text" id="country" placeholder="Your country....">
                   </div>
-                  <div class="information-user w-50">
-                      <label class="information-data-contact" for="postal-code">Postal code</label>
-                      <input class="data-contact-input" type="number" id="postal-code" placeholder="Your postal code..">
+                  <div class="form-group">
+                      <label class="information-data-group" for="postal-code">Postal code</label>
+                      <i class="fa-solid fa-envelopes-bulk"></i>                  <input class="form-input-group" type="number" id="postal-code" placeholder="Your postal code..">
                   </div>
               </div>
-              <div>
-                  <input class="information-checkbox-text" type="checkbox" id="checkbox">
-                  <label class="information-checkbox" for="checkbox">Save this information for next time</label>
+              <div class="form-group">
+                  <input class="information-checkbox" type="checkbox" id="checkbox">
+                  <label class="information-checkbox-text" for="checkbox">Save this information for next time</label>
                 </div>
                 <button class="information-submit-data" type="submit">Continue</button>
           </form>
