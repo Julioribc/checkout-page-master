@@ -32,13 +32,15 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, auto);
-    grid-template-area: "header"
-                        "shopping-car"
+    grid-template-areas: "header"
+                        "item-card"
                         "contact-information"
                         "footer";
 }
 
-
+.header{
+    grid-area: header;
+}
 .title {
     font-size: 2.4rem;
     color: var(--gray-primary);
@@ -50,6 +52,7 @@ body {
 }
 
 .item-card {
+    grid-area: item-card;
     background-color: var(--gray-6);
     border-radius: 1.5rem;
 }
@@ -181,6 +184,7 @@ body {
 }
 
 .contact-information {
+    grid-area: contact-information;
     width: 100%;
     margin-top: 4.0rem;
 }
@@ -200,6 +204,7 @@ body {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     width: 100%;
+    position: relative;
 }
 
 .information-data-group {
@@ -215,10 +220,18 @@ body {
     margin-top: 0.6rem;
     margin-bottom: 0.6rem;
     width: 100%;
-    padding: 1rem;
+    padding: 1rem 1rem 1rem 5rem;
     border-radius: 1.0rem;
     border: 1px solid #828282;
     color: #828282;
+}
+
+.icon-form-group {
+    font-size: 1.7rem;
+    color: #828282;
+    position: absolute;
+    top: 2.9rem;
+    left: 1.5rem;
 }
 
 .information-subtitle {
@@ -234,6 +247,11 @@ body {
 
 .half-group div {
     width: 47%;
+}
+
+.form-group select {
+    background-color: var(--white);
+    
 }
 
 .information-checkbox {
@@ -263,7 +281,31 @@ body {
     font-size: 1.6rem;
     line-height: 2rem;
     color: var(--white);
-    /* position: absolute;
-    right: 0; */
+    float: right;
+}
+
+.footer {
+    grid-area: footer;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    text-align: center;
+    color: #BDBDBD;
+}
+
+@media screen and (min-width: 992px){
+    .container {
+        width: 70%;
+        grid-template-columns: 1.5fr 1fr;
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: "header                header"
+                             "contact-information   item-card"
+                             "footer                footer";
+
+    }
 }
 
