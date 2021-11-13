@@ -223,7 +223,7 @@ body {
     padding: 1rem 1rem 1rem 5rem;
     border-radius: 1.0rem;
     border: 1px solid #828282;
-    color: #828282;
+    color: #000000;
 }
 
 .icon-form-group {
@@ -297,15 +297,44 @@ body {
     color: #BDBDBD;
 }
 
-@media screen and (min-width: 992px){
+@media screen and (min-width: 800px){
     .container {
-        width: 70%;
-        grid-template-columns: 1.5fr 1fr;
+        width: 100%;
+        padding: 5rem;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(2, auto);
         grid-template-areas: "header                header"
                              "contact-information   item-card"
                              "footer                footer";
+        grid-gap: 2rem;
+    }
 
+    .header {
+        padding: 0px 4rem;
+    }
+
+    .contact-information {
+        padding: 0px 4rem;
+        margin-top: 0;
+    }
+
+    .item-card {
+        max-width: 35.0rem;
+        max-height: 46.0rem;
+    }
+
+    .card {
+        padding: 3rem 5rem 0rem 4rem;
+
+    }
+
+
+    .card-price-total {
+        margin-top: 6rem;
+    }
+
+    .card-product-amount {
+        margin-top: 2rem;
     }
 }
 
