@@ -321,6 +321,7 @@ body {
     .item-card {
         max-width: 35.0rem;
         max-height: 46.0rem;
+        margin-left: 6rem;
     }
 
     .card {
@@ -336,5 +337,12 @@ body {
     .card-product-amount {
         margin-top: 2rem;
     }
+
+    .product-total {
+        width: 4rem;
+        padding-left: 1rem;
+        justify-content: space-between;
+    }
+    
 }
 
